@@ -5,32 +5,37 @@
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Restaurant Reviews</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <h1>
+      <a href="/">Restaurant Reviews</a>
+    </h1>
     <nav>
-      <h1>
-        <a href="/">Restaurant Reviews</a>
-      </h1>
+
     </nav>
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" aria-labelledby="map-title">
+      <h2 id="map-title" class="offscreen">map</h2>
       <div id="map"></div>
     </section>
-    <section>
-      <div class="filter-options">
-        <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
-        </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
-        </select>
-      </div>
+    <section class="filter-options" aria-labelledby="filter-results">
+      <h2 id="filter-results">Filter Results</h2>
+      <select id="neighborhoods-select" tabindex="-1" name="neighborhoods" onchange="updateRestaurants()">
+        <option value="all">All Neighborhoods</option>
+      </select>
+      <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <option value="all">All Cuisines</option>
+      </select>
+    </section>
+    <section id="filtered-restaurants" aria-labelledby="restaurant-list-title">
+      <h2 id="restaurant-list-title" class="offscreen">Restaurants list</h2>
       <ul id="restaurants-list"></ul>
     </section>
   </main>
