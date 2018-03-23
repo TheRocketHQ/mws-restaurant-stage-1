@@ -316,3 +316,26 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* Accessible navigation headers and skip links */
+.offscreen {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
+header .skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #3397db;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+header .skip-link:focus {
+  position: absolute;
+  top: 0;
+}
