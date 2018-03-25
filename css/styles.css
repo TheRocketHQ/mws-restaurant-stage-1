@@ -173,6 +173,9 @@ nav h1 a {
   flex-wrap: wrap;
   justify-content: center;
 }
+#restaurants-list:hover li:not(:hover) {
+  opacity: 0.5;
+}
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
@@ -184,12 +187,10 @@ nav h1 a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 1rem;
+  transition: opacity 0.2s;
 }
 
-#restaurants-list li:hover {
-  background-color: #ddd;
-  color: #fff;
-}
 @media screen and (min-width: 650px) {
   #restaurants-list li {
     max-width: 40%;
