@@ -165,7 +165,9 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return `/mws-restaurant-stage-1/img/${restaurant.photograph}`;
+    return `https://raw.githubusercontent.com/TheRocketHQ/mws-restaurant-stage-1/master/img/${
+      restaurant.photograph
+    }`;
   }
 
   /**
