@@ -123,11 +123,11 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = review => {
   const li = document.createElement("li");
-  const name = document.createElement("p");
+  const name = document.createElement("p"); //h3
   name.innerHTML = review.name;
   li.appendChild(name);
 
-  const date = document.createElement("p");
+  const date = document.createElement("p"); //bold
   date.innerHTML = review.date;
   li.appendChild(date);
 
