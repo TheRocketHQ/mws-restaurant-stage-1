@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header id="header">
-    <a href="#neighborhoods-select" class="skip-link">Skip to restaurant filter</a>
+  <header>
+    <a href="#neighborhoods-select" class="skip-link" tabindex="0">Skip to restaurant filter</a>
     <nav>
       <h1>
         <a href="/mws-restaurant-stage-1/">Restaurant Reviews</a>
@@ -26,7 +26,7 @@
     </section>
     <section class="filter-options" aria-labelledby="filter-results">
       <h2 id="filter-results">Filter Results</h2>
-      <select id="neighborhoods-select" tabindex="-1" name="neighborhoods" onchange="updateRestaurants()">
+      <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1">
         <option value="all">All Neighborhoods</option>
       </select>
       <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
@@ -48,6 +48,7 @@
     <a href="/">
       <strong>Restaurant Reviews</strong>
     </a> All Rights Reserved.
+    <a href="#top" class="skip-link">Go to Top</a>
   </footer>
 
 </body>

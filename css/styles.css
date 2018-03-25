@@ -185,6 +185,11 @@ nav h1 a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+#restaurants-list li:hover {
+  background-color: #ddd;
+  color: #fff;
+}
 @media screen and (min-width: 650px) {
   #restaurants-list li {
     max-width: 40%;
@@ -378,4 +383,7 @@ header .skip-link {
 header .skip-link:focus {
   position: absolute;
   top: 0;
+}
+footer .skip-link {
+  z-index: -100;
 }
