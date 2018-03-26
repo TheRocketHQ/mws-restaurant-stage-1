@@ -325,8 +325,10 @@ nav h1 a {
 }
 
 #restaurant-address {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+  background-color: white;
+  font-size: 2em;
 }
 
 /* Reviews */
