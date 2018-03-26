@@ -364,6 +364,9 @@ nav h1 a {
   #reviews-list li {
     width: 100%;
   }
+  #reviews-list li > p {
+    text-align: justify;
+  }
 }
 
 /* Accessible navigation headers and skip links */
