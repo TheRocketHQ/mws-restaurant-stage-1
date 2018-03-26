@@ -26,7 +26,7 @@
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb">
       <li>
-        <a href="/mws-restaurant-stage-1/">Home</a>
+        <a href="http://0.0.0.0:8000/">Home</a>
       </li>
     </ul>
     <!-- End breadcrumb -->
@@ -45,18 +45,21 @@
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container" aria-labelledby="restaurant-name" tabindex="-1">
-      <h2 id="restaurant-name"></h2>
+    <section id="restaurant-container" aria-labelledby="restaurant-cuisine" tabindex="-1">
       <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
+      <h2 id="restaurant-cuisine"></h2>
+      <p id="restaurant-name"></p>
       <address>
         <p id="restaurant-address"></p>
       </address>
+
       <table id="restaurant-hours">
-        <tr>
-          <th>Day</th>
-          <th>Hour</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hour</th>
+          </tr>
+        </thead>
       </table>
     </section>
     <!-- end restaurant -->

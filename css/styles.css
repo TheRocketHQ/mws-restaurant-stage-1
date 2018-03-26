@@ -263,6 +263,7 @@ nav h1 a {
   margin: 15px 0 30px;
   text-transform: uppercase;
   line-height: 1.1;
+  text-align: center;
 }
 #restaurant-img {
   width: 100%;
@@ -271,6 +272,7 @@ nav h1 a {
   margin: 10px 0px;
   border-bottom: 1px solid #d9d9d9;
   padding: 10px;
+  text-align: center;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -278,7 +280,7 @@ nav h1 a {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: 0 0 20px;
+  margin: -10px 0 20px;
   padding: 10px 0;
   text-align: center;
   text-transform: uppercase;
@@ -387,6 +389,6 @@ header .skip-link:focus {
   position: absolute;
   top: 0;
 }
-footer .skip-link {
+.footer .skip-link {
   z-index: -100;
 }
