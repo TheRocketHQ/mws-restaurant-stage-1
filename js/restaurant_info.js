@@ -56,7 +56,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   name.innerHTML = restaurant.name;
 
   const address = document.getElementById("restaurant-address");
-  address.innerHTML = restaurant.address;
+  address.innerHTML = "<b>Address: </b>" + restaurant.address;
 
   const image = document.getElementById("restaurant-img");
   image.className = "restaurant-img";
