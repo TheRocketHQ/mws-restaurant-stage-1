@@ -101,7 +101,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById("reviews-container");
   const title = document.createElement("h3");
 
-  title.innerHTML = `<h3>Reviews</h3> ${container.title}`;
+  title.innerHTML = `Reviews ${container.title}`;
   container.appendChild(title);
 
   if (!reviews) {
