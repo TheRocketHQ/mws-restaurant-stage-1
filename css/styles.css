@@ -19,6 +19,14 @@ p {
   font-size: 1em;
   line-height: 1.5;
 }
+th {
+  background-color: orange;
+  font-size: 1.5em;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #d3d0d0;
+}
 body {
   background-color: #fdfdfd;
   margin: 0;
@@ -75,6 +83,7 @@ section {
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  width: 50%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -250,7 +259,6 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  padding-top: 166px;
   height: calc(100% - 80px);
 }
 .inside .footer {
@@ -315,7 +323,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-  border: 2px solid #f3f3f3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -327,12 +335,10 @@ nav h1 a {
   margin: 0 0 10px;
 }
 #restaurant-hours {
-  width: calc(80% - 10px);
-  margin: 0px 15%;
+  margin: 0px 25%;
 }
 #restaurant-hours td {
   color: #666;
-  border-bottom: 1px solid #d9d9d9;
   padding: 10px;
   text-align: -moz-center;
 }
@@ -360,7 +366,6 @@ nav h1 a {
     width: calc(50% + 1px);
   }
   #restaurant-container {
-    padding: 140px 40px 30px;
     width: 50%;
   }
   #reviews-container {
@@ -378,7 +383,7 @@ nav h1 a {
 .offscreen {
   height: 1px;
   width: 1px;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   top: -10px;
 }
