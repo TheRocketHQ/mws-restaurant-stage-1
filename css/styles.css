@@ -310,9 +310,8 @@ nav h1 a {
 
 /* Restaurant */
 #restaurant-img {
-  max-width: 80%;
+  max-width: 100%;
   min-width: 280px;
-  margin: 20px;
 }
 
 #restaurant-address {
@@ -368,8 +367,9 @@ nav h1 a {
   padding: 10px;
   min-width: 280px;
   width: -moz-min-content;
-  margin: 20px;
   font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #restaurant-hours td {
@@ -409,10 +409,14 @@ nav h1 a {
     color: orange;
     width: 100%;
   }
-
+  #img-container {
+    margin: 20px;
+    font-size: calc(inherit * 150%);
+  }
   #restaurant-container > img {
     width: 100%;
   }
+
   #reviews-container {
     width: 30%;
   }
