@@ -98,12 +98,11 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-  padding: 10px 40px 16px;
+  padding: 15px;
   list-style: none;
   background-color: #eee;
   font-size: 1em;
   margin: 0;
-  width: 100%;
 }
 
 /* Display list items side by side */
@@ -252,10 +251,9 @@ nav h1 a {
   padding-top: 130px;
   height: calc(100% - 80px);
 }
-.inside #footer {
+.inside footer {
   bottom: 0;
   position: absolute;
-  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -330,7 +328,7 @@ nav h1 a {
 /*Split view for larger screens */
 @media screen and (min-width: 1000px) {
   #breadcrumb {
-    width: 50%;
+    width: calc(50% - 10px);
   }
   .inside #map-container {
     background: blue none repeat scroll 0 0;
@@ -347,7 +345,7 @@ nav h1 a {
     width: 100%;
   }
   .inside #footer {
-    width: 50%;
+    width: calc(50% - 10px);
   }
   #restaurant-container {
     padding: 140px 40px 30px;
