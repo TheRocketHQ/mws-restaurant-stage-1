@@ -202,7 +202,7 @@ nav h1 a {
 #reviews-list {
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
+  margin-bottom: 100px;
   padding: 30px 15px 60px;
   text-align: center;
   display: flex;
