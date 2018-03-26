@@ -15,7 +15,7 @@
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header id="header">
     <!-- Beginning nav -->
     <a href="#restaurant-container" class="skip-link">Skip to restaurant</a>
     <nav>
@@ -23,13 +23,6 @@
         <a href="http://0.0.0.0:8000/">Restaurant Reviews</a>
       </h1>
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-      <li>
-        <a href="http://0.0.0.0:8000/">Home</a>
-      </li>
-    </ul>
-    <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -40,6 +33,13 @@
     <section id="restaurant-map" aria-labelledby="map-title">
       <h2 id="map-title" class="offscreen">map</h2>
       <div id="map-container">
+        <!-- Beginning breadcrumb -->
+        <ul id="breadcrumb">
+          <li>
+            <a href="http://0.0.0.0:8000/">Home</a>
+          </li>
+        </ul>
+        <!-- End breadcrumb -->
         <div id="map"></div>
       </div>
     </section>

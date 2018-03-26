@@ -126,6 +126,8 @@ nav h1 a {
   background-color: #eee;
   font-size: 1.2em;
   margin: 0;
+  text-align: left;
+  top: 5px;
 }
 
 /* Display list items side by side */
@@ -285,7 +287,7 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 
-.inside .header {
+.inside #header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -302,16 +304,24 @@ nav h1 a {
   height: calc(100% - 80px);
 }
 
+.inside #map-container > .breadcrumb {
+  position: fixed;
+  top: 100px;
+}
+
 .inside .footer {
   width: 100%;
   bottom: 0;
   position: absolute;
+  margin-top: 100px;
 }
 
 /* Restaurant */
 #restaurant-img {
   max-width: 100%;
   min-width: 280px;
+  \margin-left: auto;
+  margin-right: auto;
 }
 
 #restaurant-address {
@@ -327,7 +337,7 @@ nav h1 a {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: -10px 0 00px;
+  margin: 80px 0 00px;
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
@@ -381,9 +391,6 @@ nav h1 a {
 /*Split view for larger screens */
 
 @media screen and (min-width: 1000px) {
-  #breadcrumb {
-    width: calc(50% + 1px);
-  }
   .inside #map-container {
     background: blue none repeat scroll 0 0;
     height: calc(100% - 80px);
@@ -411,7 +418,6 @@ nav h1 a {
   }
   #img-container {
     margin: 20px;
-    font-size: calc(inherit * 150%);
   }
   #restaurant-container > img {
     width: 100%;
