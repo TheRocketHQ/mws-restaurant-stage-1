@@ -269,6 +269,8 @@ nav h1 a {
 }
 #restaurant-address {
   margin: 10px 0px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -319,8 +321,14 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
+#restaurant-hours {
+  width: calc(80% - 10px);
+  margin: 0px 15%;
+}
 #restaurant-hours td {
   color: #666;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px;
 }
 
 /*Split view for larger screens */
