@@ -53,7 +53,7 @@ fetchRestaurantFromURL = callback => {
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById("restaurant-name");
-  name.innerHTML = restaurant.name;
+  name.innerHTML = `${restaurant.name} ${restaurant.cuisine_type}`;
 
   const image = document.getElementById("restaurant-img");
   image.className = "restaurant-img";
@@ -61,8 +61,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.alt = `${restaurant.name} cover photo`;
 
   const cuisine = document.getElementById("restaurant-cuisine");
-  cuisine.innerHTML = restaurant.cuisine_type;
-
   const address = document.getElementById("restaurant-address");
   address.innerHTML = restaurant.address;
 
@@ -123,7 +121,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = review => {
   const li = document.createElement("li");
-  const name = document.createElement("h4"); //h4
+  const name = document.createElement("h2"); //h2
   name.innerHTML = review.name;
   li.appendChild(name);
 

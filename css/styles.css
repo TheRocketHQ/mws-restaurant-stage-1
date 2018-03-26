@@ -24,7 +24,7 @@ p {
 
 th {
   background-color: orange;
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: white;
 }
 
@@ -219,7 +219,6 @@ nav h1 a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fff;
   margin: 15px;
-  padding: 0 30px 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -244,7 +243,7 @@ nav h1 a {
 
 #restaurants-list .restaurant-img {
   background-color: #ccc;
-  display: block;
+  display: inline-flex;
   margin: 0;
   max-width: 100%;
   min-width: 100%;
@@ -310,22 +309,10 @@ nav h1 a {
 }
 
 /* Restaurant */
-
-#restaurant-name {
-  color: orange;
-  margin: -20px 0 0 -20px;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 200;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  line-height: 1.1;
-  text-align: center;
-}
-
 #restaurant-img {
-  width: 100%;
+  max-width: 80%;
+  min-width: 280px;
+  margin: 20px;
 }
 
 #restaurant-address {
@@ -335,7 +322,7 @@ nav h1 a {
 }
 
 /* Reviews */
-
+#restaurant-name,
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -352,7 +339,10 @@ nav h1 a {
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
 }
-
+#restaurant-content-container {
+  width: 100%;
+  display: inline;
+}
 @media screen and (min-width: 1000px) {
   #restaurants-list li {
     max-width: 30%;
@@ -363,8 +353,8 @@ nav h1 a {
   }
 }
 
-#reviews-container {
-  padding: 20px;
+#reviews-container > #restaurant-name {
+  height: 80px;
 }
 
 @media screen and (max-width: 480px) {
@@ -377,9 +367,9 @@ nav h1 a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
   min-width: 280px;
+  width: -moz-min-content;
   margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: bolder;
 }
 
 #restaurant-hours td {
@@ -400,7 +390,7 @@ nav h1 a {
     position: fixed;
     right: 0;
     top: 80px;
-    width: 50%;
+    width: 70%;
     padding-top: 0;
   }
   .inside #map {
@@ -412,10 +402,19 @@ nav h1 a {
     width: calc(50% + 1px);
   }
   #restaurant-container {
-    width: 50%;
+    width: 30%;
+  }
+  #restaurant-container > h3 {
+    height: 80px;
+    color: orange;
+    width: 100%;
+  }
+
+  #restaurant-container > img {
+    width: 100%;
   }
   #reviews-container {
-    width: 50%;
+    width: 30%;
   }
   #reviews-list li {
     width: 100%;
