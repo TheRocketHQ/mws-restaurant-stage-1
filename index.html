@@ -11,6 +11,7 @@
 
 <body>
   <header>
+    <!-- Skips to Select -->
     <a href="#neighborhoods-select" class="skip-link" tabindex="0">Skip to restaurant filter</a>
     <nav>
       <h1>
@@ -20,10 +21,13 @@
   </header>
 
   <main id="maincontent">
+    <!-- Contains the website main content -->
+    <!-- Map -->
     <section id="map-container" aria-labelledby="map-title">
       <h2 id="map-title" class="offscreen">map</h2>
       <div id="map"></div>
     </section>
+    <!-- Filter -->
     <section class="filter-options" aria-labelledby="filter-results">
       <h2 id="filter-results">Filter Results</h2>
       <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1">
@@ -33,6 +37,7 @@
         <option value="all">All Cuisines</option>
       </select>
     </section>
+    <!-- Filter Results -->
     <section id="filtered-restaurants" aria-labelledby="restaurant-list-title">
       <h2 id="restaurant-list-title" class="offscreen">Restaurants list</h2>
       <ul id="restaurants-list"></ul>
