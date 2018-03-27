@@ -138,7 +138,7 @@ nav h1 a {
 
 /* Add a slash symbol (/) before/behind each list item */
 
-#breadcrumb li + li:before {
+#breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
@@ -304,7 +304,7 @@ nav h1 a {
   height: calc(100% - 80px);
 }
 
-.inside #map-container > .breadcrumb {
+.inside #map-container>.breadcrumb {
   position: fixed;
   top: 100px;
 }
@@ -317,10 +317,11 @@ nav h1 a {
 }
 
 /* Restaurant */
+
 #restaurant-img {
   max-width: 100%;
   min-width: 280px;
-  \margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -332,6 +333,7 @@ nav h1 a {
 }
 
 /* Reviews */
+
 #restaurant-name,
 #restaurant-cuisine {
   background-color: #333;
@@ -358,13 +360,12 @@ nav h1 a {
   #restaurants-list li {
     max-width: 30%;
   }
-
   #reviews-list li {
     min-width: 30%;
   }
 }
 
-#reviews-container > #restaurant-name {
+#reviews-container>#restaurant-name {
   height: 80px;
 }
 
@@ -413,7 +414,7 @@ nav h1 a {
   #restaurant-container {
     width: 30%;
   }
-  #restaurant-container > h3 {
+  #restaurant-container>h3 {
     height: 80px;
     color: orange;
     width: 100%;
@@ -421,10 +422,9 @@ nav h1 a {
   #img-container {
     margin: 20px;
   }
-  #restaurant-container > img {
+  #restaurant-container>img {
     width: 100%;
   }
-
   #reviews-container {
     width: 30%;
   }
@@ -432,7 +432,7 @@ nav h1 a {
     width: 100%;
     text-align: left;
   }
-  #reviews-list li > cite {
+  #reviews-list li>cite {
     width: 100%;
     height: 100%;
     padding-bottom: 25px;
