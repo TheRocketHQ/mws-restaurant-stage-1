@@ -324,34 +324,56 @@ nav h1 a {
 }
 
 #restaurant-address {
+  margin: 50px;
   padding: 20px;
   text-align: center;
   background-color: white;
   font-size: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Reviews */
 
 #restaurant-name,
-#restaurant-cuisine {
+#restaurant-cuisine,
+#restaurant-header,
+#address-header,
+#reviews-header {
   background-color: #333;
   color: #ddd;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: 80px 0 00px;
+  margin: 80px 0 0px;
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-#restaurant-container,
-#reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-}
-
 #restaurant-content-container {
   display: inline;
+}
+
+#restaurant-header,
+#address-header,
+#reviews-header {
+  background-color: orange;
+  color: white;
+  font-weight: bolder;
+}
+
+#restaurant-header {
+  margin: -7px 0px 20px;
+}
+
+#address-header,
+#reviews-header {
+  margin: 20px 0px 20px;
+}
+
+#address-header>h3 {
+  margin: 0px;
+  font-style: normal;
 }
 
 @media screen and (min-width: 1000px) {
@@ -379,8 +401,7 @@ nav h1 a {
   min-width: 280px;
   width: -moz-min-content;
   font-weight: bolder;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto 50px auto;
 }
 
 #restaurant-hours td {

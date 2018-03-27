@@ -99,7 +99,7 @@ fillRestaurantHoursHTML = (
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById("reviews-container");
-  const title = document.createElement("h3");
+  const title = document.getElementById("reviews-header");
 
   title.innerHTML = `Reviews ${container.title}`;
   container.appendChild(title);
