@@ -297,6 +297,7 @@ nav h1 a {
 #maincontent {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .inside #map-container {
@@ -319,10 +320,7 @@ nav h1 a {
 /* Restaurant */
 
 #restaurant-img {
-  max-width: 100%;
-  min-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 #restaurant-address {
@@ -420,7 +418,8 @@ nav h1 a {
     width: 100%;
   }
   #img-container {
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #restaurant-container>img {
     width: 100%;
