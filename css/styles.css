@@ -121,13 +121,21 @@ nav h1 a {
 }
 
 #breadcrumb {
-  padding: 15px;
+  height: 80px;
   list-style: none;
   background-color: #eee;
-  font-size: 1.2em;
+  font-size: 2em;
   margin: 0;
   text-align: left;
   top: 5px;
+  padding: 5px 15px;
+}
+
+@media screen and (min-width: 230px) and (max-width: 480px) {
+  nav h1 {
+    font-size: 1em;
+    height: 80px;
+  }
 }
 
 /* Display list items side by side */
@@ -147,7 +155,6 @@ nav h1 a {
 /* Add a color to all links inside the list */
 
 #breadcrumb li a {
-  color: #0275d8;
   text-decoration: none;
 }
 
